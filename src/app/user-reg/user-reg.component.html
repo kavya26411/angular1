@@ -1,0 +1,25 @@
+<div class="w-50 mx-auto mt-5">
+    <h2 class="text-center text-info bg-success mt-4">registration form </h2>
+    <form  #ref="ngForm" (ngSubmit)="adduserdata()">
+      <div>
+        <label for="un">user name</label>
+        <input type="text " name="username" id=" un" class="form-control"  [(ngModel)]=userobj1.u>
+      </div>
+      <br>
+      <br>
+      <div>
+        <label for="dob">data of birth</label>
+        <input type="date " name="dob" id=" dob" class="form-control"   [(ngModel)]=userobj1.d>
+      </div>
+      <br>
+      <br>
+  
+      <div>
+        <label for="em">email</label>
+        <input type="email " name="email" id=" m" class="form-control"   [(ngModel)]=userobj1.e>
+      </div>
+      <br>
+      <br>
+      <button class="btn btn-success  d-block mx-auto"> register</button>
+    </form> 
+</div> 

@@ -1,0 +1,76 @@
+
+
+<!--<div class="w-50 mx-auto mt-5">
+
+  <h2 class="text-center text-info bg-success mt-4">registration form </h2>
+  <form  #ref="ngForm" (ngSubmit)="adduserdata()">
+    <div>
+      <label for="un">user name</label>
+      <input type="text " name="username" id=" un" class="form-control"  [(ngModel)]=userobj1.u>
+    </div>
+    <br>
+    <br>
+    <div>
+      <label for="dob">data of birth</label>
+      <input type="date " name="dob" id=" dob" class="form-control"   [(ngModel)]=userobj1.d>
+    </div>
+    <br>
+    <br>
+
+    <div>
+      <label for="em">email</label>
+      <input type="email " name="email" id=" m" class="form-control"   [(ngModel)]=userobj1.e>
+    </div>
+    <br>
+    <br>
+    <button class="btn btn-success  d-block mx-auto"> register</button>
+  </form> 
+  <br>
+  <br>
+  <hr>
+  <div class="text-center">
+    <h3  class="text-info"> list of users</h3>
+
+    <h4 *ngIf="userarr.length==0">no data bro </h4>
+    <br>
+    
+  <div *ngIf="userarr.length!= 0">
+    <table class="table">
+      <tr>
+        <th>username</th>
+        <th>dob</th>
+        <th>email</th>
+      </tr>
+      <tbody>
+        <tr *ngFor=" let user of userarr">
+          <td>{{user.username}}</td>
+          <td>{{user.dob}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
+  
+
+   
+
+</div>-->>
+
+<!--nesting the child component into the root component that is user reg and user list are the
+   child components and app.compo.... is the parent component -->
+   <div class="container">
+     <h1 class="text-center bg-info text-dark">user management system</h1>
+     <div class="row">
+       <div class="col-sm-6">1
+         <app-user-reg></app-user-reg>
+       </div>
+        <div class="col-sm-6">2
+          <app-user-list></app-user-list>
+        </div>
+    </div>
+
+   
+   </div>
+
+  
